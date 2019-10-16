@@ -4,7 +4,7 @@
 #include<math.h>
 #define ROUND(x) ((int) (x+0.5))
 
-//DDA Function for line generation
+//DDA Function 
 void ddaline(int x1, int y1, int x2, int y2, int c)
 {
     // calculate dx & dy
@@ -28,8 +28,8 @@ void ddaline(int x1, int y1, int x2, int y2, int c)
     putpixel(x,y,c);
     for (int i = 0; i < steps; ++i)
     {
-	x += x_inc;                          // increment in x at each step
-	y += y_inc;                          // increment in y at each step
+	x += x_inc;                          
+	y += y_inc;                          
 	putpixel(ROUND(x), ROUND(y),c);
     }
 }
