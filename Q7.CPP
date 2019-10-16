@@ -4,7 +4,7 @@
 #include<dos.h>
 void main(){
 	int gd = DETECT, gm;
-	initgraph(&gd, &gm, "C:\\TURBOC3\\BGI");
+	initgraph(&gd, &gm, "C:\\TC\\BGI");
 	for(int j=0;j<5;j++)
 	{
 	for(int i=0;i<600;i++)
